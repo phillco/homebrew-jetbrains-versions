@@ -5,7 +5,7 @@ cask "intellij-idea@2023.1" do
   desc "Java IDE"
   homepage "https://www.jetbrains.com/idea/"
 
-  app "IntelliJ IDEA #{version.before_comma}.app"
+  app "IntelliJ IDEA.app", target: "IntelliJ IDEA #{version.before_comma}.app"
 
   if Hardware::CPU.intel?
       url "https://download.jetbrains.com/idea/ideaIU-2023.1.dmg"
