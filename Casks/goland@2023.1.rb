@@ -5,7 +5,7 @@ cask "goland@2023.1" do
   desc "Go IDE"
   homepage "https://www.jetbrains.com/go/"
 
-  app "GoLand.app"
+  app "GoLand.app", target: "GoLand #{version.before_comma}.app"
 
   if Hardware::CPU.intel?
       url "https://download.jetbrains.com/go/goland-2023.1.dmg"

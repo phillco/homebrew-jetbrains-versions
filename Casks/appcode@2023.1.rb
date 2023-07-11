@@ -5,7 +5,7 @@ cask "appcode@2023.1" do
   desc "iOS and MacOS Development IDE"
   homepage "https://www.jetbrains.com/objc/"
 
-  app "AppCode.app"
+  app "AppCode.app", target: "AppCode #{version.before_comma}.app"
 
   if Hardware::CPU.intel?
       url "https://download.jetbrains.com/objc/AppCode-2023.1.dmg"

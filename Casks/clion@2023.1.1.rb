@@ -5,7 +5,7 @@ cask "clion@2023.1.1" do
   desc "C and C++ IDE"
   homepage "https://www.jetbrains.com/clion/"
 
-  app "CLion.app"
+  app "CLion.app", target: "CLion #{version.before_comma}.app"
 
   if Hardware::CPU.intel?
       url "https://download.jetbrains.com/cpp/CLion-2023.1.1.dmg"
