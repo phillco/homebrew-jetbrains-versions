@@ -5,7 +5,7 @@ cask "rubymine@2023.1" do
   desc "Ruby IDE"
   homepage "https://www.jetbrains.com/rubymine/"
 
-  app "RubyMine.app"
+  app "RubyMine.app", target: "RubyMine #{version.before_comma}.app"
 
   if Hardware::CPU.intel?
       url "https://download.jetbrains.com/ruby/RubyMine-2023.1.dmg"

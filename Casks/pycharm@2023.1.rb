@@ -5,7 +5,7 @@ cask "pycharm@2023.1" do
   desc "Python IDE"
   homepage "https://www.jetbrains.com/pycharm/"
 
-  app "PyCharm.app"
+  app "PyCharm.app", target: "PyCharm #{version.before_comma}.app"
 
   if Hardware::CPU.intel?
       url "https://download.jetbrains.com/python/pycharm-professional-2023.1.dmg"
